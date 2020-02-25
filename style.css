@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'montserrat', sans-serif;
     background-color: black;
     overflow: hidden;
 }
@@ -17,7 +16,6 @@ nav,
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 nav {
@@ -38,29 +36,26 @@ nav {
 }
 
 #logo {
-    color: #f05136;
+    color: orangered;
     font-size: 2.2em;
 }
 
 .burger div {
     background-color: black;
-    height: 3px;
-    width: 25px;
+    height: 4px;
+    width: 18px;
     margin: 5px;
     transition: all 0.5s ease;
 }
 
 .burger {
     display: none;
-
 }
 
 @media screen and (max-width:768px) {
-
     .burger {
         display: block;
     }
-
     .nav-links-container {
         position: absolute;
         right: 0;
@@ -73,22 +68,17 @@ nav {
         justify-content: space-around;
         width: 50%;
         transform: translateX(100%);
-
     }
-
     .nav-links-container li {
         opacity: 0%;
     }
-
     .nav-clicked {
         transform: translateX(0%);
     }
-
-
 }
 
 .burger-clicked #line1 {
-    transform: rotate(45deg) translate(5px);
+    transform: rotate(45deg) translate(6px);
 }
 
 .burger-clicked #line2 {
@@ -96,14 +86,13 @@ nav {
 }
 
 .burger-clicked #line3 {
-    transform: rotate(-45deg) translate(5px);
+    transform: rotate(-45deg) translate(6px);
 }
 
-@keyframes navLinkAnimation {
+@keyframes navLinksAnimation {
     from {
         opacity: 0%;
     }
-
     to {
         opacity: 100%;
     }
